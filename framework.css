@@ -1,14 +1,33 @@
 /**********************************
-The webs framework(0.0.0.0.1)
+The web's framework(0.0.0.0.1)
 ==================
 ***********************************
 
-Author : Imri Paloja
-Email : imri.paloja@gmail.com
-HomePage : www.eurobytes.nl
-Version : 0.1
-Name : Framework.css
+Author      : Imri Paloja
+Email       : imri.paloja@gmail.com
+HomePage    : www.eurobytes.nl
+Version     : 0.1
+Name        : Framework.css
 
+
+Note: This is still a work in progress!
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+/*
+            Tags From: http://www.w3schools.com/tags/
 */
 
 a, abbr, acronym, address, applet, area, article, aside, audio, b, base, basefont, bdi, bdo, big, blockquote, body, br, button, canvas, caption, center, cite, code, col, colgroup, datalist, dd, del, details, dfn, dialog, dir, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, frame, frameset, head, header, h1, h2, h3, h4, h5, h6, hr, html, i, iframe, img, input, ins, kbd, keygen, label, legend, li, link, main, map, mark, menu, meta, meter, nav, noframes, noscript, object, ol, optgroup, option, output, p, param, pre, progress, q, rp, rt, ruby, s, samp, script, section, select, small, source, span, strike, strong, style, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, title, tr, track, tt, u, ul, var, video, wbr {
@@ -35,7 +54,232 @@ article, aside, bdi, details, dialog, img figcaption, figure, footer, header, ma
 }
 
 
+/*
+
+            When the firefox equivalent has been tested and, deduced as to working, 
+            the chome scrollbar feature will be activated along with the firefox plugin
+
+::-webkit-scrollbar {
+    width: 10px; height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CCCCCC;
+
+}
+
+
+/* Arrow down up 
+
+/* Up arrow 
+::-webkit-scrollbar-thumb:hover {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #FFFFFF;
+}
+
+/* Down arrow 
+::-webkit-scrollbar-thumb {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #FFFFFF;
+}
+
+
+
+Firefox equivalent:;
+
+http://jscrollpane.kelvinluck.com/
+
+*/
+
+/*          Selected txt
+
+    This will need to provide a CANONICAL answer to selected text colors.
+
+*/
+
+::selection {
+   background-color: #0065A4;
+   color: #FFFFFF;
+}
+
+::-moz-selection {
+   background-color: #0065A4;
+   color: #FFFFFF;
+}
+
+/*          links(a)
+
+    This will need to provide a CANONICAL answer to links.
+
+*/
+
+a {
+    color: #3465A4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+            Headers still need to be tested, but for now this will do.
+*/
+
+
+h1 {
+    font-size: 190%;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 160%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+h4 {
+    font-size: 100%;
+}
+
+h5 {
+    font-size: 90%;
+}
+
+h6 {
+    font-size: 80%;
+}
+
+p {
+    font-size: 12px;
+    margin: 1%;
+}
+
+b, strong {
+    font-size: 100%;
+    font-weight: bolder;
+}
+
+
+i {
+    font-style: italic;
+}
 
 mark {
     background-color: #FFFF00;
 }
+
+/*
+
+    The following below still needs testing! 
+    
+    the border and background-color to be removed or, different canonical colors.
+
+*/
+
+
+blockquote {
+    background-color: #F5F5F5;
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px 1px 1px 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
+    font-size: 100%;
+    margin: 5% auto;
+    padding: 2px 3px;
+    text-align: left;
+    width: 75%;
+}
+
+ blockquote i:before {
+    color: #454545;
+    content: open-quote;
+    font-weight: bold;
+    margin-right: -3px;
+}
+
+blockquote i:after {
+    color: #454545;
+    content: close-quote;
+    font-weight: bold;
+    margin-left: -3px;
+}
+
+cite {
+    font-size: 12px;
+    padding: 2px 3px;
+    border: 1px solid #CCCCCC;
+    background-color: #F5F5F5;
+}
+
+cite:before {
+    content: open-quote;
+    font-weight: bold;
+}
+
+cite:after {
+    content: close-quote;
+    font-weight: bold;
+}
+
+sup {
+    font-size: 11px;
+    vertical-align: super;
+}
+
+kbd {
+    background-color: #F7F7F7;
+    border: 1px solid #CCCCCC;
+    padding: 0 3px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+code {
+    background-color: #EEEEEE;
+    border: 1px dashed #CCCCCC;
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0 5px;
+    word-wrap: break-word;
+}
+
+
+/*  inputs
+
+            I deliberetly left this blank. the inputs need some further thinking.
+            
+            same thinking for select, option, form.
+
+*/
+
+input {
+    
+}
+
+hr {
+    border: 1px solid #CCCCCC;
+}
+
+img {
+    border: 0px none;
+}
+
+
+
+
